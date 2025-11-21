@@ -18,7 +18,7 @@ stored.
 P
 ## PROGRAM - ARP
 ## CLIENT
-```
+``` 
 import socket 
 s=socket.socket() 
 s.bind(('localhost',8000)) 
@@ -32,7 +32,7 @@ while True:
             except KeyError: 
                 c.send("Not Found".encode())
 ```
-## SERVER
+### SERVER
 ```
 import socket 
 s=socket.socket() 
@@ -42,9 +42,9 @@ while True:
     s.send(ip.encode()) 
     print("MAC Address",s.recv(1024).decode())
 ```
-
 ## OUPUT - ARP
-<img width="1642" height="1153" alt="494216130-f3777a1e-ca8c-4c01-94d0-108bb472d1c9" src="https://github.com/user-attachments/assets/f5800956-8de4-4c48-9f1e-4de774ec77ce" />
+<img width="1642" height="1153" alt="image" src="https://github.com/user-attachments/assets/f3777a1e-ca8c-4c01-94d0-108bb472d1c9" />
+
 
 ## PROGRAM - RARP
 ## CLIENT
@@ -62,7 +62,7 @@ while True:
     except KeyError:
         c.send("Not Found".encode())
 ```
-##  SERVER
+## SERVER
 ```
 import socket
 s=socket.socket()
@@ -73,7 +73,7 @@ while True:
     print("Logical Address",s.recv(1024).decode())
 ```
 ## OUPUT -RARP
-<img width="1628" height="1154" alt="494215514-50fdd41a-ff4f-444d-9fb2-15e30e405b19" src="https://github.com/user-attachments/assets/baedbe93-43f7-4d58-9ea4-d22c0a89302c" />
+<img width="1628" height="1154" alt="image" src="https://github.com/user-attachments/assets/50fdd41a-ff4f-444d-9fb2-15e30e405b19" />
 
 ## RESULT
 Thus, the python program for simulating ARP/RARP protocols using TCP was successfully 
